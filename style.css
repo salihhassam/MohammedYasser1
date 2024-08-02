@@ -1,0 +1,206 @@
+/* التهيئة العامة */
+body {
+    font-family: 'Rakkas', sans-serif; /* الخط الأساسي للنصوص العامة */
+    margin: 0;
+    padding: 0;
+    background-color: #ddd7d7;
+    color: #333;
+    direction: rtl;
+}
+
+/* ترويسة الصفحة */
+header {
+    background: linear-gradient(135deg, #98a4b1, #00bfff);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* إضافة تباعد أسفل الترويسة */
+}
+
+header h1 {
+    font-family: 'Amiri Quran', serif; /* الخط للعناوين في الترويسة */
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* تصميم قسم البطل */
+.hero {
+    background: url('images/hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    background-blur: rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px; /* إضافة تباعد أسفل قسم البطل */
+}
+
+.hero-content h2 {
+    font-family: 'Amiri Quran', serif; /* الخط للعناوين في قسم البطل */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-family: 'Rakkas', sans-serif; /* الخط للنصوص في قسم البطل */
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* تصميم باقي الأقسام */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: right;
+    margin-bottom: 40px; /* إضافة تباعد أسفل الأقسام */
+}
+
+section h2 {
+    font-family: 'Amiri Quran', serif; /* الخط للعناوين في الأقسام */
+    font-size: 2em;
+    color: #1e90ff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-family: 'Rakkas', sans-serif; /* الخط للنصوص داخل الأقسام */
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* تصميم قسم المهارات والهوايات */
+#skills {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: right;
+}
+
+/* العنوان الفرعي */
+#skills h2 {
+    font-family: 'Amiri Quran', serif; /* الخط للعناوين الفرعية */
+    font-size: 2em;
+    color: #1e90ff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* قائمة المهارات والهوايات */
+#skills ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#skills ul li {
+    background: #f0f0f0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    font-family: 'Rakkas', sans-serif; /* الخط للنصوص داخل القائمة */
+}
+
+/* تصميم الأزرار */
+button {
+    padding: 12px 20px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Rakkas', sans-serif;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #00bfff;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* تذييل الصفحة */
+footer {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px; /* إضافة تباعد أعلى التذييل */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+
+/* الأجهزة اللوحية */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+        margin-bottom: 30px; /* تعديل التباعد السفلي للترويسة */
+    }
+
+    .hero {
+        padding: 60px 10px;
+        margin-bottom: 30px; /* تعديل التباعد السفلي لقسم البطل */
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 30px; /* تعديل التباعد السفلي للأقسام */
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
+
+/* الهواتف المحمولة */
+@media (max-width: 480px) {
+    header {
+        padding: 15px 5px;
+        margin-bottom: 20px; /* تعديل التباعد السفلي للترويسة */
+    }
+
+    .hero {
+        padding: 40px 5px;
+        margin-bottom: 20px; /* تعديل التباعد السفلي لقسم البطل */
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 20px; /* تعديل التباعد السفلي للأقسام */
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
